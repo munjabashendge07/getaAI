@@ -1,0 +1,26 @@
+{
+  "name": "ai-prompt-library-workspace",
+  "version": "1.0.0",
+  "description": "Full-Stack AI Prompt Library assessment (React + TypeScript client, Node.js + Express + MongoDB server)",
+  "author": "munjabashendge07 <munjabashendge07@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/munjabashendge07/ai-prompt-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/munjabashendge07/ai-prompt-library/issues"
+  },
+  "homepage": "https://github.com/munjabashendge07/ai-prompt-library#readme",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "build:client": "npm run build --prefix client",
+    "build:server": "npm run build --prefix server",
+    "build": "npm run build:server && npm run build:client",
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
